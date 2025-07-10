@@ -1,0 +1,109 @@
+{
+  "experiment_info": {
+    "type": "single_model_grid_search",
+    "model_name": "KNeighbors",
+    "n_components": 20,
+    "ratio": "x2",
+    "version": 1,
+    "suffix": "x2_v1_20_KNeighbors",
+    "timestamp": "2025-07-04T10:16:45.432645"
+  },
+  "pca_info": {
+    "n_components": 20,
+    "explained_variance_ratio": 0.32941789810531014
+  },
+  "metrics": {
+    "train": {
+      "f1": 0.9929410088959416,
+      "f1_score": 0.9905757117046731,
+      "precision": 0.9915925310392023,
+      "recall": 0.9895609756097561,
+      "accuracy": 0.9937335627780123,
+      "classification_report": {
+        "0": {
+          "precision": 0.9947982498784638,
+          "recall": 0.9958148815027495,
+          "f1-score": 0.9953063060872103,
+          "support": 20549.0
+        },
+        "1": {
+          "precision": 0.9915925310392023,
+          "recall": 0.9895609756097561,
+          "f1-score": 0.9905757117046731,
+          "support": 10250.0
+        },
+        "accuracy": 0.9937335627780123,
+        "macro avg": {
+          "precision": 0.9931953904588331,
+          "recall": 0.9926879285562529,
+          "f1-score": 0.9929410088959416,
+          "support": 30799.0
+        },
+        "weighted avg": {
+          "precision": 0.9937313769896547,
+          "recall": 0.9937335627780123,
+          "f1-score": 0.9937319500230197,
+          "support": 30799.0
+        }
+      },
+      "y_pred": "[0 1 0 ... 0 1 0]",
+      "y_pred_proba": "[[1. 0.]\n [0. 1.]\n [1. 0.]\n ...\n [1. 0.]\n [0. 1.]\n [1. 0.]]",
+      "auc_roc": 0.9996729245622301,
+      "tpr": 0.9895609756097561,
+      "fpr": 0.004185118497250474,
+      "g_mean": 0.99268300361524
+    },
+    "test": {
+      "f1": 0.9912697462466711,
+      "f1_score": 0.9884080370942813,
+      "precision": 0.9865021210952565,
+      "recall": 0.9903213317847465,
+      "accuracy": 0.9922077922077922,
+      "classification_report": {
+        "0": {
+          "precision": 0.9951047581750538,
+          "recall": 0.9931600547195623,
+          "f1-score": 0.994131455399061,
+          "support": 5117.0
+        },
+        "1": {
+          "precision": 0.9865021210952565,
+          "recall": 0.9903213317847465,
+          "f1-score": 0.9884080370942813,
+          "support": 2583.0
+        },
+        "accuracy": 0.9922077922077922,
+        "macro avg": {
+          "precision": 0.9908034396351552,
+          "recall": 0.9917406932521544,
+          "f1-score": 0.9912697462466711,
+          "support": 7700.0
+        },
+        "weighted avg": {
+          "precision": 0.99221896446374,
+          "recall": 0.9922077922077922,
+          "f1-score": 0.992211508713185,
+          "support": 7700.0
+        }
+      },
+      "y_pred": "[1 0 0 ... 1 0 0]",
+      "y_pred_proba": "[[0. 1.]\n [1. 0.]\n [1. 0.]\n ...\n [0. 1.]\n [1. 0.]\n [1. 0.]]",
+      "auc_roc": 0.9987537083277251,
+      "tpr": 0.9903213317847465,
+      "fpr": 0.006839945280437756,
+      "g_mean": 0.9917396775693148
+    }
+  },
+  "model_info": {
+    "best_params": {
+      "weights": "uniform",
+      "n_neighbors": 10
+    },
+    "best_cv_score": 0.9882371862453766,
+    "trained_model": "KNeighborsClassifier(metric='euclidean', n_neighbors=10)"
+  },
+  "paths": {
+    "plots": {}
+  },
+  "additional_info": {}
+}

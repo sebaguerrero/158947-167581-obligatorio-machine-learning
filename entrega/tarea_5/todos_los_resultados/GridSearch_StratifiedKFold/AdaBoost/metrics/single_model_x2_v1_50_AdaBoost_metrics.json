@@ -1,0 +1,110 @@
+{
+  "experiment_info": {
+    "type": "single_model_grid_search",
+    "model_name": "AdaBoost",
+    "n_components": 50,
+    "ratio": "x2",
+    "version": 1,
+    "suffix": "x2_v1_50_AdaBoost",
+    "timestamp": "2025-07-05T06:24:45.150334"
+  },
+  "pca_info": {
+    "n_components": 50,
+    "explained_variance_ratio": 0.4669717346409006
+  },
+  "metrics": {
+    "train": {
+      "f1": 0.999890323096416,
+      "f1_score": 0.999853637117627,
+      "precision": 1.0,
+      "recall": 0.9997073170731707,
+      "accuracy": 0.9999025942400728,
+      "classification_report": {
+        "0": {
+          "precision": 0.9998540288049825,
+          "recall": 1.0,
+          "f1-score": 0.9999270090752049,
+          "support": 20549.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 0.9997073170731707,
+          "f1-score": 0.999853637117627,
+          "support": 10250.0
+        },
+        "accuracy": 0.9999025942400728,
+        "macro avg": {
+          "precision": 0.9999270144024912,
+          "recall": 0.9998536585365854,
+          "f1-score": 0.999890323096416,
+          "support": 30799.0
+        },
+        "weighted avg": {
+          "precision": 0.999902608458508,
+          "recall": 0.9999025942400728,
+          "f1-score": 0.9999025906666471,
+          "support": 30799.0
+        }
+      },
+      "y_pred": "[0 1 0 ... 0 1 0]",
+      "y_pred_proba": "[[0.66396776 0.33603224]\n [0.33559166 0.66440834]\n [0.63590047 0.36409953]\n ...\n [0.5733145  0.4266855 ]\n [0.32178331 0.67821669]\n [0.62097037 0.37902963]]",
+      "auc_roc": 1.0,
+      "tpr": 0.9997073170731707,
+      "fpr": 0.0,
+      "g_mean": 0.9998536478271061
+    },
+    "test": {
+      "f1": 0.9951858952072261,
+      "f1_score": 0.9935909885414643,
+      "precision": 0.9968823070927514,
+      "recall": 0.9903213317847465,
+      "accuracy": 0.9957142857142857,
+      "classification_report": {
+        "0": {
+          "precision": 0.9951305025321386,
+          "recall": 0.9984365839359,
+          "f1-score": 0.996780801872988,
+          "support": 5117.0
+        },
+        "1": {
+          "precision": 0.9968823070927514,
+          "recall": 0.9903213317847465,
+          "f1-score": 0.9935909885414643,
+          "support": 2583.0
+        },
+        "accuracy": 0.9957142857142857,
+        "macro avg": {
+          "precision": 0.9960064048124451,
+          "recall": 0.9943789578603233,
+          "f1-score": 0.9951858952072261,
+          "support": 7700.0
+        },
+        "weighted avg": {
+          "precision": 0.9957181533347442,
+          "recall": 0.9957142857142857,
+          "f1-score": 0.9957107644917769,
+          "support": 7700.0
+        }
+      },
+      "y_pred": "[1 0 0 ... 1 0 0]",
+      "y_pred_proba": "[[0.33212693 0.66787307]\n [0.62749251 0.37250749]\n [0.67494036 0.32505964]\n ...\n [0.38517392 0.61482608]\n [0.63312961 0.36687039]\n [0.66557963 0.33442037]]",
+      "auc_roc": 0.9995012563543095,
+      "tpr": 0.9903213317847465,
+      "fpr": 0.0015634160641000586,
+      "g_mean": 0.9943706791262569
+    }
+  },
+  "model_info": {
+    "best_params": {
+      "estimator__max_depth": 2,
+      "learning_rate": 1.0,
+      "n_estimators": 200
+    },
+    "best_cv_score": 0.990743631351186,
+    "trained_model": "AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=2),\n                   n_estimators=200, random_state=0)"
+  },
+  "paths": {
+    "plots": {}
+  },
+  "additional_info": {}
+}

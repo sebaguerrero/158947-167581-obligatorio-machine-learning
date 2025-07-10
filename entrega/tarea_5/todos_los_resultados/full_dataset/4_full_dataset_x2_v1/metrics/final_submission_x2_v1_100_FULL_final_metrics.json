@@ -1,0 +1,16 @@
+{
+  "n_components": 100,
+  "suffix": "x2_v1_100",
+  "experiment_model_name": "XGBGBoost",
+  "num_models": 1,
+  "model_names": [
+    "XGBGBoost"
+  ],
+  "explained_variance_ratio": 0.597368224790856,
+  "full_dataset_f1": 1.0,
+  "full_dataset_auc_roc": 1.0,
+  "full_dataset_tpr": 1.0,
+  "full_dataset_fpr": 0.0,
+  "full_dataset_g_mean": 1.0,
+  "dataset_size": 38499
+}

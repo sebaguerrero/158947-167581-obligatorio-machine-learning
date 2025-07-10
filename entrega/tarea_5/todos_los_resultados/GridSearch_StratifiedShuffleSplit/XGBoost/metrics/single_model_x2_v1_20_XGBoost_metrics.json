@@ -1,0 +1,110 @@
+{
+  "experiment_info": {
+    "type": "single_model_grid_search",
+    "model_name": "XGBoost",
+    "n_components": 20,
+    "ratio": "x2",
+    "version": 1,
+    "suffix": "x2_v1_20_XGBoost",
+    "timestamp": "2025-07-04T15:38:28.965878"
+  },
+  "pca_info": {
+    "n_components": 20,
+    "explained_variance_ratio": 0.3343251180665613
+  },
+  "metrics": {
+    "train": {
+      "f1": 0.9995611957556944,
+      "f1_score": 0.9994142912924638,
+      "precision": 1.0,
+      "recall": 0.9988292682926829,
+      "accuracy": 0.9996103769602909,
+      "classification_report": {
+        "0": {
+          "precision": 0.9994163707990856,
+          "recall": 1.0,
+          "f1-score": 0.9997081002189249,
+          "support": 20549.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 0.9988292682926829,
+          "f1-score": 0.9994142912924638,
+          "support": 10250.0
+        },
+        "accuracy": 0.9996103769602909,
+        "macro avg": {
+          "precision": 0.9997081853995429,
+          "recall": 0.9994146341463415,
+          "f1-score": 0.9995611957556944,
+          "support": 30799.0
+        },
+        "weighted avg": {
+          "precision": 0.9996106043556742,
+          "recall": 0.9996103769602909,
+          "f1-score": 0.9996103197229274,
+          "support": 30799.0
+        }
+      },
+      "y_pred": "[0 1 0 ... 0 1 0]",
+      "y_pred_proba": "[[9.9999738e-01 2.6276584e-06]\n [1.0728836e-06 9.9999893e-01]\n [9.9996662e-01 3.3352328e-05]\n ...\n [9.9963856e-01 3.6144600e-04]\n [1.0728836e-06 9.9999893e-01]\n [9.9999535e-01 4.6512368e-06]]",
+      "auc_roc": 0.9999998528205634,
+      "tpr": 0.9988292682926829,
+      "fpr": 0.0,
+      "g_mean": 0.9994144627193879
+    },
+    "test": {
+      "f1": 0.9950424069254508,
+      "f1_score": 0.9934031819945673,
+      "precision": 0.9957215091404122,
+      "recall": 0.9910956252419667,
+      "accuracy": 0.9955844155844156,
+      "classification_report": {
+        "0": {
+          "precision": 0.9955156950672646,
+          "recall": 0.9978503029118624,
+          "f1-score": 0.9966816318563342,
+          "support": 5117.0
+        },
+        "1": {
+          "precision": 0.9957215091404122,
+          "recall": 0.9910956252419667,
+          "f1-score": 0.9934031819945673,
+          "support": 2583.0
+        },
+        "accuracy": 0.9955844155844156,
+        "macro avg": {
+          "precision": 0.9956186021038385,
+          "recall": 0.9944729640769145,
+          "f1-score": 0.9950424069254508,
+          "support": 7700.0
+        },
+        "weighted avg": {
+          "precision": 0.9955847363336203,
+          "recall": 0.9955844155844156,
+          "f1-score": 0.9955818609481597,
+          "support": 7700.0
+        }
+      },
+      "y_pred": "[1 0 0 ... 1 0 0]",
+      "y_pred_proba": "[[4.1723251e-06 9.9999583e-01]\n [9.9997360e-01 2.6396834e-05]\n [9.9999785e-01 2.1174978e-06]\n ...\n [6.6757202e-06 9.9999332e-01]\n [9.9999481e-01 5.1789543e-06]\n [9.9988127e-01 1.1870531e-04]]",
+      "auc_roc": 0.9992630063937089,
+      "tpr": 0.9910956252419667,
+      "fpr": 0.0021496970881375805,
+      "g_mean": 0.9944672291545449
+    }
+  },
+  "model_info": {
+    "best_params": {
+      "learning_rate": 0.2,
+      "max_depth": 3,
+      "n_estimators": 300
+    },
+    "best_cv_score": 0.9896053780619439,
+    "trained_model": "XGBClassifier(base_score=None, booster=None, callbacks=None,\n              colsample_bylevel=None, colsample_bynode=None,\n              colsample_bytree=None, device=None, early_stopping_rounds=None,\n              enable_categorical=False, eval_metric='logloss',\n              feature_types=None, feature_weights=None, gamma=None,\n              grow_policy=None, importance_type=None,\n              interaction_constraints=None, learning_rate=0.2, max_bin=None,\n              max_cat_threshold=None, max_cat_to_onehot=None,\n              max_delta_step=None, max_depth=3, max_leaves=None,\n              min_child_weight=None, missing=nan, monotone_constraints=None,\n              multi_strategy=None, n_estimators=300, n_jobs=-1,\n              num_parallel_tree=None, ...)"
+  },
+  "paths": {
+    "plots": {}
+  },
+  "additional_info": {}
+}

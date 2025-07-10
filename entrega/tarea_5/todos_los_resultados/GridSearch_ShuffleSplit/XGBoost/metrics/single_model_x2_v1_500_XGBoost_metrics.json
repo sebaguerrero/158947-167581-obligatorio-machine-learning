@@ -1,0 +1,110 @@
+{
+  "experiment_info": {
+    "type": "single_model_grid_search",
+    "model_name": "XGBoost",
+    "n_components": 500,
+    "ratio": "x2",
+    "version": 1,
+    "suffix": "x2_v1_500_XGBoost",
+    "timestamp": "2025-07-06T01:26:29.126645"
+  },
+  "pca_info": {
+    "n_components": 500,
+    "explained_variance_ratio": 0.9637796696251356
+  },
+  "metrics": {
+    "train": {
+      "f1": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0,
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20549.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10250.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30799.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30799.0
+        }
+      },
+      "y_pred": "[0 1 0 ... 0 1 0]",
+      "y_pred_proba": "[[9.9999946e-01 5.3432922e-07]\n [2.3841858e-06 9.9999762e-01]\n [9.9999774e-01 2.2586887e-06]\n ...\n [9.9885100e-01 1.1490138e-03]\n [1.1920929e-07 9.9999988e-01]\n [9.9996507e-01 3.4947985e-05]]",
+      "auc_roc": 1.0,
+      "tpr": 1.0,
+      "fpr": 0.0,
+      "g_mean": 1.0
+    },
+    "test": {
+      "f1": 0.9957686047183449,
+      "f1_score": 0.9943656498931417,
+      "precision": 0.9980499219968799,
+      "recall": 0.9907084785133565,
+      "accuracy": 0.9962337662337662,
+      "classification_report": {
+        "0": {
+          "precision": 0.9953271028037384,
+          "recall": 0.9990228649599374,
+          "f1-score": 0.9971715595435482,
+          "support": 5117.0
+        },
+        "1": {
+          "precision": 0.9980499219968799,
+          "recall": 0.9907084785133565,
+          "f1-score": 0.9943656498931417,
+          "support": 2583.0
+        },
+        "accuracy": 0.9962337662337662,
+        "macro avg": {
+          "precision": 0.9966885124003091,
+          "recall": 0.994865671736647,
+          "f1-score": 0.9957686047183449,
+          "support": 7700.0
+        },
+        "weighted avg": {
+          "precision": 0.9962404848785285,
+          "recall": 0.9962337662337662,
+          "f1-score": 0.9962303043971845,
+          "support": 7700.0
+        }
+      },
+      "y_pred": "[1 0 0 ... 1 0 0]",
+      "y_pred_proba": "[[9.5367432e-07 9.9999905e-01]\n [9.9997842e-01 2.1553285e-05]\n [9.9999881e-01 1.2217258e-06]\n ...\n [5.0067902e-05 9.9994993e-01]\n [9.9994218e-01 5.7802379e-05]\n [9.9981868e-01 1.8130655e-04]]",
+      "auc_roc": 0.9993972253299127,
+      "tpr": 0.9907084785133565,
+      "fpr": 0.0009771350400625367,
+      "g_mean": 0.9948569859756295
+    }
+  },
+  "model_info": {
+    "best_params": {
+      "learning_rate": 0.2,
+      "max_depth": 3,
+      "n_estimators": 300
+    },
+    "best_cv_score": 0.990662279243098,
+    "trained_model": "XGBClassifier(base_score=None, booster=None, callbacks=None,\n              colsample_bylevel=None, colsample_bynode=None,\n              colsample_bytree=None, device=None, early_stopping_rounds=None,\n              enable_categorical=False, eval_metric='logloss',\n              feature_types=None, feature_weights=None, gamma=None,\n              grow_policy=None, importance_type=None,\n              interaction_constraints=None, learning_rate=0.2, max_bin=None,\n              max_cat_threshold=None, max_cat_to_onehot=None,\n              max_delta_step=None, max_depth=3, max_leaves=None,\n              min_child_weight=None, missing=nan, monotone_constraints=None,\n              multi_strategy=None, n_estimators=300, n_jobs=-1,\n              num_parallel_tree=None, ...)"
+  },
+  "paths": {
+    "plots": {}
+  },
+  "additional_info": {}
+}

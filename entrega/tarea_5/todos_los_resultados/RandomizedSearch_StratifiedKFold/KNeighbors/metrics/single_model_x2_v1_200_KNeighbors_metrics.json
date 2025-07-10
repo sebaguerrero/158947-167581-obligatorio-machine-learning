@@ -1,0 +1,109 @@
+{
+  "experiment_info": {
+    "type": "single_model_grid_search",
+    "model_name": "KNeighbors",
+    "n_components": 200,
+    "ratio": "x2",
+    "version": 1,
+    "suffix": "x2_v1_200_KNeighbors",
+    "timestamp": "2025-07-04T14:12:21.772197"
+  },
+  "pca_info": {
+    "n_components": 200,
+    "explained_variance_ratio": 0.7710376117344098
+  },
+  "metrics": {
+    "train": {
+      "f1": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0,
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20549.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10250.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30799.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30799.0
+        }
+      },
+      "y_pred": "[0 1 0 ... 0 1 0]",
+      "y_pred_proba": "[[1. 0.]\n [0. 1.]\n [1. 0.]\n ...\n [1. 0.]\n [0. 1.]\n [1. 0.]]",
+      "auc_roc": 1.0,
+      "tpr": 1.0,
+      "fpr": 0.0,
+      "g_mean": 1.0
+    },
+    "test": {
+      "f1": 0.7215635630203072,
+      "f1_score": 0.7068823690704689,
+      "precision": 0.5472298874973467,
+      "recall": 0.9980642663569493,
+      "accuracy": 0.7223376623376624,
+      "classification_report": {
+        "0": {
+          "precision": 0.998327199732352,
+          "recall": 0.5831541919093218,
+          "f1-score": 0.7362447569701456,
+          "support": 5117.0
+        },
+        "1": {
+          "precision": 0.5472298874973467,
+          "recall": 0.9980642663569493,
+          "f1-score": 0.7068823690704689,
+          "support": 2583.0
+        },
+        "accuracy": 0.7223376623376624,
+        "macro avg": {
+          "precision": 0.7727785436148493,
+          "recall": 0.7906092291331356,
+          "f1-score": 0.7215635630203072,
+          "support": 7700.0
+        },
+        "weighted avg": {
+          "precision": 0.847004555900791,
+          "recall": 0.7223376623376624,
+          "f1-score": 0.7263950104837995,
+          "support": 7700.0
+        }
+      },
+      "y_pred": "[1 0 0 ... 1 0 0]",
+      "y_pred_proba": "[[0.         1.        ]\n [1.         0.        ]\n [0.66854277 0.33145723]\n ...\n [0.         1.        ]\n [1.         0.        ]\n [1.         0.        ]]",
+      "auc_roc": 0.9009421503522944,
+      "tpr": 0.9980642663569493,
+      "fpr": 0.4168458080906781,
+      "g_mean": 0.7629058662252879
+    }
+  },
+  "model_info": {
+    "best_params": {
+      "weights": "distance",
+      "n_neighbors": 3
+    },
+    "best_cv_score": 0.6990812491997563,
+    "trained_model": "KNeighborsClassifier(metric='euclidean', n_neighbors=3, weights='distance')"
+  },
+  "paths": {
+    "plots": {}
+  },
+  "additional_info": {}
+}

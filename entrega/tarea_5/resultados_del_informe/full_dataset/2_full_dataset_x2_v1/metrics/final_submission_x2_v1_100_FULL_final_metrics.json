@@ -1,0 +1,16 @@
+{
+  "n_components": 100,
+  "suffix": "x2_v1_100",
+  "experiment_model_name": "MLPClassifier",
+  "num_models": 1,
+  "model_names": [
+    "MLPClassifier"
+  ],
+  "explained_variance_ratio": 0.5974170121918514,
+  "full_dataset_f1": 0.9987426645090872,
+  "full_dataset_auc_roc": 0.999925500599508,
+  "full_dataset_tpr": 0.9970388841268605,
+  "full_dataset_fpr": 0.0001948102548118133,
+  "full_dataset_g_mean": 0.9984210788679225,
+  "dataset_size": 38499
+}

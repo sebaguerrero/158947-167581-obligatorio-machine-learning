@@ -1,0 +1,1 @@
+EL primer algoritmo utilizado para crear las matrices de confusión para todos los resultados no estaba correcto. Luego se modificó pero se guardaron los resultados que numéricamente están bien, solo que están mal etiquedatos en esos plots. Los que se muestran en el informe están correctos.

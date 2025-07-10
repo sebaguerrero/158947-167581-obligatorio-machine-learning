@@ -1,0 +1,110 @@
+{
+  "experiment_info": {
+    "type": "single_model_grid_search",
+    "model_name": "GradientBoosting",
+    "n_components": 50,
+    "ratio": "x2",
+    "version": 1,
+    "suffix": "x2_v1_50_GradientBoosting",
+    "timestamp": "2025-07-04T16:10:22.186068"
+  },
+  "pca_info": {
+    "n_components": 50,
+    "explained_variance_ratio": 0.46690872228810465
+  },
+  "metrics": {
+    "train": {
+      "f1": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0,
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20549.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10250.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30799.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30799.0
+        }
+      },
+      "y_pred": "[0 1 0 ... 0 1 0]",
+      "y_pred_proba": "[[9.99926862e-01 7.31376576e-05]\n [1.50615474e-04 9.99849385e-01]\n [9.99673091e-01 3.26908610e-04]\n ...\n [9.99197521e-01 8.02479261e-04]\n [1.71326992e-04 9.99828673e-01]\n [9.99901917e-01 9.80831892e-05]]",
+      "auc_roc": 1.0,
+      "tpr": 1.0,
+      "fpr": 0.0,
+      "g_mean": 1.0
+    },
+    "test": {
+      "f1": 0.9941607650580788,
+      "f1_score": 0.9922209257098406,
+      "precision": 0.9968737788198515,
+      "recall": 0.9876113046844754,
+      "accuracy": 0.9948051948051948,
+      "classification_report": {
+        "0": {
+          "precision": 0.993775530052519,
+          "recall": 0.9984365839359,
+          "f1-score": 0.996100604406317,
+          "support": 5117.0
+        },
+        "1": {
+          "precision": 0.9968737788198515,
+          "recall": 0.9876113046844754,
+          "f1-score": 0.9922209257098406,
+          "support": 2583.0
+        },
+        "accuracy": 0.9948051948051948,
+        "macro avg": {
+          "precision": 0.9953246544361852,
+          "recall": 0.9930239443101877,
+          "f1-score": 0.9941607650580788,
+          "support": 7700.0
+        },
+        "weighted avg": {
+          "precision": 0.9948148516844696,
+          "recall": 0.9948051948051948,
+          "f1-score": 0.9947991485526808,
+          "support": 7700.0
+        }
+      },
+      "y_pred": "[1 0 0 ... 1 0 0]",
+      "y_pred_proba": "[[2.78362152e-04 9.99721638e-01]\n [9.99710565e-01 2.89435398e-04]\n [9.99919608e-01 8.03915975e-05]\n ...\n [3.49933401e-04 9.99650067e-01]\n [9.99839820e-01 1.60179981e-04]\n [9.98833508e-01 1.16649198e-03]]",
+      "auc_roc": 0.9994672098372341,
+      "tpr": 0.9876113046844754,
+      "fpr": 0.0015634160641000586,
+      "g_mean": 0.9930091929612963
+    }
+  },
+  "model_info": {
+    "best_params": {
+      "learning_rate": 0.1,
+      "max_depth": 5,
+      "n_estimators": 200
+    },
+    "best_cv_score": 0.9874270778831123,
+    "trained_model": "GradientBoostingClassifier(max_depth=5, n_estimators=200, random_state=0)"
+  },
+  "paths": {
+    "plots": {}
+  },
+  "additional_info": {}
+}
